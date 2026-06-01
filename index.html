@@ -1,0 +1,1464 @@
+<!-- Include Page Designer Campaign Banner JavaScript and Styles only once here rather than at component level. --><!-- There should only be one Campagin Banner added on a PD page. Multiple Banners is unsupported at the moment. -->
+<!DOCTYPE html>
+<html lang="en" data-country="INT" dir="ltr">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>CASA TUPKA</title>
+    <meta name="description"
+        content="Dive into the world of CASA TUPKA - explore a luxurious range of signature mixers, cocktail recipes, and premium beverages from the legendary brand.">
+    <meta name="keywords" content="CASA TUPKA">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon"
+        href="img/Casa Tupka LOGO.png">
+
+
+ <link rel="stylesheet" href="css/casatupka.css" />
+
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+   
+
+
+    <style>
+    /* Coming Soon Modal */
+    .cs-modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);opacity:0;pointer-events:none;transition:opacity .22s ease;z-index:99999}
+    .cs-modal.open{opacity:1;pointer-events:auto}
+    .cs-modal__box{position:relative;background:#0b0b0b;color:#fff;padding:28px 28px;border-radius:14px;max-width:460px;width:92%;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.6);transform:translateY(6px);transition:transform .28s ease}
+    .cs-modal.open .cs-modal__box{transform:translateY(0)}
+    .cs-modal__logo{display:block;margin:0 auto 14px;width:120px}
+    .cs-modal__title{font-size:22px;margin:6px 0 0;font-weight:700}
+    .cs-modal__subtitle{margin-top:8px;opacity:.9}
+    .cs-close{position:absolute;right:18px;top:12px;background:transparent;border:0;color:#fff;font-size:20px;cursor:pointer}
+    </style>
+
+</head>
+<div id="age-gate" class="age-gate">
+  <div class="age-gate__inner">
+    <img src="img/Casa Tupka LOGO.png" alt="Casa Tupka" class="age-gate__logo" />
+    <p class="age-gate__tagline">You must be of legal drinking age to enter</p>
+    <h2 class="age-gate__question">Are you 21 or older?</h2>
+    <div class="age-gate__buttons">
+      <button id="age-yes" class="btn btn--gold">Yes, Enter</button>
+      <button id="age-no" class="btn btn--outline">No, Exit</button>
+    </div>
+    <p class="age-gate__disclaimer">By entering, you confirm that you are of legal drinking age in your country of residence. Please drink responsibly.</p>
+  </div>
+</div>
+<body class="body body--page-designer">
+
+
+    <div class="page js-page" data-action="Home-Show" data-querystring="">
+
+        <header class="luxury-header">
+
+            <!-- Left Hamburger -->
+            <button class="menu-btn" id="openMenu">
+                ☰
+            </button>
+
+            <!-- Center Logo -->
+            <a href="#" class="logo">
+                <img src="img/Casa-Tupka-LOGO.png" alt="Casa Tupka">
+            </a>
+
+            <!-- Right Search -->
+            <button class="search-btn">
+                <i class="ri-search-line"></i>
+            </button>
+
+        </header>
+
+
+        <div class="menu-overlay" id="menuOverlay">
+
+            <div class="sidebar-menu">
+
+                <!-- Close -->
+                <div class="menu-top">
+                    <button class="close-btn" id="closeMenu">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+
+                <!-- Menu Links -->
+                <div class="menu-links">
+
+                    <a href="#our_story" class="menu-item">
+                        <span>Our Story</span>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+
+                    <a href="#the_craft" class="menu-item">
+                        <span>The Craft</span>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+
+                    <a href="#Expressions" class="menu-item">
+                        <span>Expressions</span>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+
+                    <a href="#founder" class="menu-item">
+                        <span>Founder</span>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                      <!-- <a href="mailto:hello@casatupka.com" class="menu-item">
+                        <span>Contact us</span>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a> -->
+
+                </div>
+
+                
+
+                <!-- Bottom Buttons -->
+                <div class="bottom-buttons">
+
+                    <a href="mailto:hello@casatupka.com" class="dark-btn" style="padding: 10px;">
+                        Contact us
+                    </a>
+
+                    <!-- <a href="index.html#Reposado" class="light-btn" style="padding: 10px;">
+                        Reposado Lifestyle
+                    </a> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <main id="maincontent">
+
+            <div class="content-page" id="hp-beauty">
+                <div class="experience-region experience-main">
+                    <!-- ===================================
+     SCROLL WRAPPER
+=================================== -->
+
+                    <div class="scroll-animation-wrapper">
+
+                        <!-- FIXED VIDEO -->
+
+                        <div class="fixed-video-box" id="fixedVideo">
+
+                            <video autoplay muted loop playsinline>
+                                <source src="img/Casa Tupka Banner Video_1.mp4" type="video/mp4">
+                            </video>
+
+                            <div class="video-content">
+                                <p class="paragraph">Founded by Yo Yo Honey Singh &bull; Crafted in Mexico</p>
+                                <h1 class="heading-tag">A Legend's <br>Finest Pour</h1>
+                                <!-- <a href="#" class="a-tag">The Reveal Is Coming</a> -->
+                            </div>
+
+                        </div>
+                        <!-- BANNER -->
+
+                        <section class="banner-section">
+
+                            <div class="banner-grid">
+
+                                <!-- LEFT -->
+
+                                <div class="banner-card">
+
+                                    <video autoplay muted loop playsinline>
+
+                                        <source src="img/Banner Video Reposado.mp4" type="video/mp4">
+
+                                    </video>
+
+                                    <div class="card-content">
+                                        <h2>Reposado</h2>
+                                        <a href="#">Coming soon</a>
+                                    </div>
+
+                                </div>
+
+                                <!-- CENTER TARGET -->
+
+                                <div class="banner-card center-video-target">
+
+                                    <!-- empty because fixed video merge here -->
+
+                                    <div class="card-content">
+                                        <h2>Luxury Collection</h2>
+                                        <a href="#">Coming soon</a>
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT -->
+
+                                <div class="banner-card">
+
+                                    <video autoplay muted loop playsinline>
+
+                                        <source src="img/Casa Tupak Bottle (Blanco) Demo video.mp4" type="video/mp4">
+
+                                    </video>
+
+                                    <div class="card-content">
+                                        <h2>Blanco</h2>
+                                        <a href="#">Coming soon</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+                    <section class="mobile-video-section">
+
+                        <!-- VIDEO -->
+
+                        <div class="fixed-video-boxs" id="fixedVideos">
+
+                            <video autoplay muted loop playsinline>
+                                <source src="img/Casa Tupka Banner Video_1.mp4" type="video/mp4">
+                            </video>
+
+                            <!-- FIRST TEXT -->
+
+                            <div class="video-contents" id="videoContents">
+
+                                <p class="paragraph">
+                                    Founded by Yo Yo Honey Singh &bull; <br>Crafted in Mexico
+                                </p>
+
+                                <h1 class="heading-tag">
+                                    A Legend's <br> Finest Pour
+                                </h1>
+
+                                <a href="#founder" class="a-tag">
+                                    The Reveal Is Coming
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- SECOND TEXT -->
+
+                        <div class="after-banner-text" id="afterBannerText">
+
+                            <p class="paragraph black">
+                                Founded by Yo Yo Honey Singh &bull; Crafted in Mexico
+                            </p>
+
+                            <h1 class="heading-tag black">
+                                A Legend's <br> Finest Pour
+                            </h1>
+
+                            <a href="#" class="a-tag black-btn">
+                                Discover Casa Tupka
+                            </a>
+
+                        </div>
+                    </section>
+                    <section class="mobile-banner-section">
+
+                        <div class="mobile-banner-grid">
+
+                            <!-- LEFT -->
+
+                            <div class="mobile-banner-card">
+
+                                <video autoplay muted loop playsinline style="width: 100%;">
+
+                                    <source src="img/Casa Tupak Bottle (Blanco) Demo video.mp4" type="video/mp4">
+
+                                </video>
+
+                                <div class="mobile-card-content">
+                                    <h2>Blanco</h2>
+                                    <a href="#">Coming soon</a>
+                                </div>
+
+                            </div>
+
+                            <!-- RIGHT -->
+
+                            <div class="mobile-banner-card">
+
+                                <video autoplay muted loop playsinline style="width: 100%;">
+
+                                    <source src="img/Banner Video Reposado.mp4" type="video/mp4">
+
+                                </video>
+
+                                <div class="mobile-card-content">
+                                    <h2>Reposado</h2>
+                                    <a href="#">Coming soon</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <section class="luxury-section">
+
+                        <!-- =========================
+    LEFT IMAGE SLIDER
+    ========================= -->
+
+                        <div class="left-slider">
+
+                            <div class="slider-track">
+
+                                <!-- SLIDE 1 -->
+
+                                <div class="slide active">
+
+                                    <img src="img/khgyyy.png" alt="">
+
+                                </div>
+
+                                <!-- SLIDE 2 -->
+
+                                <!-- <div class="slide">
+
+                <img src="img/Casa tupka_banner_Honey Singh 2_.png" alt="">
+
+            </div> -->
+
+                                <!-- SLIDE 3 -->
+
+                                <!-- <div class="slide">
+
+                <img src="img/Casa tupka_banner_Reposado & Blanco & .png" alt="">
+
+            </div> -->
+
+                            </div>
+
+                        </div>
+
+                        <!-- =========================
+    RIGHT 2 COLUMN
+    ========================= -->
+
+                        <div class="right-wrapper">
+
+                            <!-- COLUMN 1 -->
+
+                            <div class="right-content">
+
+                                <div class="content-box">
+
+                                    <h2 class="main-title">
+                                        A Collection Worth The Anticipation
+                                    </h2>
+
+                                    <div class="product-grid">
+
+                                        <!-- PRODUCT -->
+
+                                        <div class="product-card">
+
+                                            <div class="product-image">
+
+                                                <img src="img/Casa Tupak Bottle (Blanco) Image-1.png" alt="">
+
+                                            </div>
+
+                                            <div class="product-title">
+                                                Coming soon
+                                            </div>
+
+                                        </div>
+
+                                        <!-- PRODUCT -->
+
+                                        <div class="product-card">
+
+                                            <div class="product-image">
+
+                                                <img src="img/Casa Tupak Bottle (Reposado) Image-2.png" alt="">
+
+                                            </div>
+
+                                            <div class="product-title">
+                                                Coming soon
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <a href="#notify" class="discover-btn">
+                                        I'm In
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <!-- COLUMN 2 -->
+
+                            <div class="right-content">
+
+                                <div class="content-box">
+
+                                    <h2 class="main-title">
+                                        Luxury Mixers & Citrus Essentials
+                                    </h2>
+
+                                    <div class="product-grid">
+
+                                        <!-- PRODUCT -->
+
+                                        <div class="product-card">
+
+                                            <div class="product-image">
+
+                                                <img src="img/Casa_Tupka_Mixer_2 (1).png" alt="">
+
+                                            </div>
+
+                                            <div class="product-title">
+                                                Coming soon
+                                            </div>
+
+                                        </div>
+
+                                        <!-- PRODUCT -->
+
+                                        <div class="product-card">
+
+                                            <div class="product-image">
+
+                                                <img src="img/Casa_Tupka_Mixer_1 (1).png" alt="">
+
+                                            </div>
+
+                                            <div class="product-title">
+                                                Coming soon
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <a href="#notify" class="discover-btn">
+                                        I'm In
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =========================
+STACK BANNERS
+========================= -->
+
+                    <div class="sticky-wrapper">
+
+                        <!-- BANNER 1 -->
+
+                        <div class="sticky-panel">
+
+                            <section class="luxury-banner">
+
+                                <img src="img/Casa Tupka Banner with Honey Singh 2.png" class="bg-image">
+
+                                <div class="banner-overlay"></div>
+
+                                <div class="banner-frame"></div>
+
+                                <!-- <div class="banner-content">
+
+                <h2>
+            Born from a vision. Bottled for the bold
+        </h2>
+
+        <a href="#" class="banner-btn">
+            Discover
+        </a>
+
+            </div> -->
+
+                            </section>
+
+                        </div>
+
+                        <!-- BANNER 2 -->
+
+                        <div class="sticky-panel">
+
+                            <section class="luxury-banner">
+
+                                <img src="img/Banner_02.png" class="bg-image">
+
+                                <div class="banner-overlay"></div>
+
+                                <div class="banner-frame"></div>
+
+                                <div class="banner-wrapper">
+                                    <div class="banner-content">
+                                        <img src="img/Casa-Tupka-LOGO.png" alt="" class="main-bottle">
+                                        <!-- <h2>CASA TUPKA</h2> -->
+                                        <h4>● BLANCO ●</h4>
+                                        <h6>Purity takes patience</h6>
+
+                                        <p>
+                                            Some things cannot be rushed. The clearest expressions of Blue Agave are on
+                                            their way — and worth every wait.<span class="mobile-hide"> exceptional
+                                                smothness and purityEach sip opnes with crisp agave sweetness, fresh
+                                                citrus notes, light vanilla undertones, and a
+                                                amoth pepper finish -creating a bold yet refined tequila experience
+                                                inspried by authentic Mexican
+                                                craftsmanship.</span>
+                                        </p>
+
+                                        <a href="#" class="banner-btn">Coming soon</a>
+                                    </div>
+
+                                    <div class="banner-image-right">
+                                        <img src="img/Casa_Tupak_Bottle__Reposado___Blanco__2-removebg-preview.png"
+                                            alt="Casa Tupka Product" class="banner-right-img">
+                                    </div>
+                                </div>
+
+                            </section>
+
+                        </div>
+
+                        <!-- BANNER 3 -->
+
+                        <div class="sticky-panel">
+
+                            <section class="luxury-banner">
+
+                                <img src="img/sticky-banner-1.png" class="bg-image">
+
+                                <div class="banner-overlay"></div>
+
+                                <div class="banner-frame"></div>
+
+                                <!-- <div class="banner-content">
+
+                 <h2>
+            Casa Botanical Sparkling Blend
+        </h2>
+
+        <a href="#" class="banner-btn">
+            Discover
+        </a>
+
+            </div> -->
+
+                            </section>
+
+                        </div>
+                        <!-- BANNER 4 -->
+
+                        <div class="sticky-panel">
+                            <section class="luxury-banner">
+
+                                <img src="img/Banner_01.png" class="bg-image">
+
+                                <div class="banner-overlay"></div>
+
+                                <div class="banner-frame"></div>
+
+                                <div class="banner-wrapper">
+                                    <div class="banner-content">
+                                        <h2>CASA TUPKA</h2>
+                                        <!-- <h2>CASA TUPKA</h2> -->
+                                        <h4>● REPOSADO ●</h4>
+                                        <h6>Time, oak and intention.</h6>
+
+                                        <p>
+                                            The finest things rest before they reveal themselves. The Reposado is no
+                                            different.<span class="mobile-hide">CASA TUPKA REPOSADO delivers a rich a
+                                                and smooth tequila experience. Notes of caramel, canilla, toasted oak,
+                                                and warm spice blend perfectly with the natural
+                                                sweetness of agave, creating a bold yet refined finish inspried by
+                                                authentic Mexican creaftsmanship.</span>
+                                        </p>
+
+                                        <a href="#" class="banner-btn">Coming soon</a>
+                                    </div>
+
+                                    <div class="banner-image-right">
+                                        <img src="img/CASA_Tupka__Reposado_4.png"
+                                            alt="Casa Tupka Product" class="banner-right-img">
+                                    </div>
+                                </div>
+
+                            </section>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="ct-gold-separator"></div>
+
+
+
+                    <div class="ct-gold-separator"></div>
+
+                    <!-- THE COLLECTION -->
+                    <section class="ct-collection-section" id="Expressions">
+                        <div class="ct-collection-container">
+                            <div class="ct-about-label">THE COLLECTION</div>
+                            <h2 class="ct-section-heading">Two Expressions.<br><span>One Legend.</span></h2>
+                            <p class="ct-collection-intro">CASA TUPKA launches with two defining expressions &mdash;
+                                each a masterclass in craftsmanship, character, and culture. Both are arriving soon.</p>
+                            <div class="ct-collection-grid">
+
+                                <!-- BLANCO -->
+                                <div class="ct-collection-card" id="blanco-card">
+                                    <div class="ct-card-glow blanco-glow"></div>
+                                    <div class="ct-card-tag">EXPRESSION 01</div>
+                                    <div class="ct-card-img-wrap">
+                                        <img src="img/blanko.png" alt="Casa Tupka Blanco" class="ct-card-bottle">
+                                    </div>
+                                    <div class="ct-card-content">
+                                        <h3>CASA TUPKA<br><span>BLANCO</span></h3>
+                                        <div class="ct-card-divider"></div>
+                                        <p class="ct-card-descriptor">The Purest Expression</p>
+                                        <p class="ct-card-desc">Blanco tequila &mdash; also called Plata or Silver
+                                            &mdash; is bottled immediately after double distillation, or rested no more
+                                            than 60 days. No wood. No time. No smoke screen. Just the pure soul of Blue
+                                            Agave in crystal-clear form &mdash; the most honest expression of
+                                            tequila&rsquo;s terroir.</p>
+                                        <div class="ct-card-notes">
+                                            <div class="ct-note"><span class="ct-note-label">Aroma</span><span>Fresh
+                                                    agave nectar, citrus blossom, light herbal minerality</span></div>
+                                            <div class="ct-note"><span class="ct-note-label">Palate</span><span>Bright
+                                                    agave sweetness, zesty lime, subtle earthy pepper</span></div>
+                                            <div class="ct-note"><span class="ct-note-label">Finish</span><span>Clean,
+                                                    lingering warmth with a peppery citrus fade</span></div>
+                                            <div class="ct-note"><span class="ct-note-label">Age</span><span>Unaged
+                                                    &mdash; Crystal Clear &amp; Pure</span></div>
+                                        </div>
+                                        <a href="#blanco" class="ct-card-btn">The Wait Continues &rarr;</a>
+                                    </div>
+                                </div>
+
+                                <!-- REPOSADO -->
+                                <div class="ct-collection-card" id="reposado-card">
+                                    <div class="ct-card-glow reposado-glow"></div>
+                                    <div class="ct-card-tag">EXPRESSION 02</div>
+                                    <div class="ct-card-img-wrap">
+                                        <img src="img/CASA_Tupka__Reposado_1-removebg-preview.png"
+                                            alt="Casa Tupka Reposado" class="ct-card-bottle">
+                                    </div>
+                                    <div class="ct-card-content">
+                                        <h3>CASA TUPKA<br><span>REPOSADO</span></h3>
+                                        <div class="ct-card-divider"></div>
+                                        <p class="ct-card-descriptor">The Rested One</p>
+                                        <p class="ct-card-desc">Reposado means &lsquo;rested&rsquo; in Spanish &mdash;
+                                            and rest is exactly what transforms this spirit. Aged 2 to 12 months in
+                                            American or French white oak barrels, Casa Tupka Reposado emerges with a
+                                            golden hue and an extraordinary balance: still vibrantly agave-forward, now
+                                            layered with warmth, vanilla, and complexity.</p>
+                                        <div class="ct-card-notes">
+                                            <div class="ct-note"><span class="ct-note-label">Aroma</span><span>Warm
+                                                    vanilla, toasted caramel, dried citrus peel, oak</span></div>
+                                            <div class="ct-note"><span class="ct-note-label">Palate</span><span>Rich
+                                                    vanilla cream, butterscotch, cinnamon spice, agave</span></div>
+                                            <div class="ct-note"><span class="ct-note-label">Finish</span><span>Long,
+                                                    warming &mdash; oak, subtle pepper, whisper of dried fruit</span>
+                                            </div>
+                                            <div class="ct-note"><span class="ct-note-label">Age</span><span>2&ndash;12
+                                                    Months in American White Oak</span></div>
+                                        </div>
+                                        <a href="#Reposado" class="ct-card-btn">The Wait Continues &rarr;</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="ct-gold-separator"></div>
+
+                    <!-- HONEY SINGH FOUNDER -->
+                    <section class="ct-founder-section" id="founder">
+                        <div class="ct-founder-bg"></div>
+                        <div class="ct-founder-container">
+                            <div class="ct-founder-left">
+                                <div class="ct-about-label">THE VISIONARY</div>
+                                <h2 class="ct-founder-heading">The Man Behind<br><span>The Legend</span></h2>
+                                <p>Born Hirdesh Singh on March 15, 1983, in Hoshiarpur, Punjab, Yo Yo Honey Singh is
+                                    formally trained at the Trinity College of Music, London &mdash; and returned to
+                                    India with an unstoppable creative vision that reshaped the sound of an entire
+                                    nation. At his peak, he became the highest-paid music artist in the Bollywood
+                                    industry, with tracks like &lsquo;Brown Rang&rsquo;, &lsquo;Angreji Beat&rsquo;, and
+                                    &lsquo;Lungi Dance&rsquo; dominating charts worldwide.</p>
+                                <p>Now, Yo Yo Honey Singh turns his legendary creative energy to the world of premium spirits.
+                                    He didn&rsquo;t hire someone to make Casa Tupka &mdash; he went to Mexico himself,
+                                    working in the agave fields, learning the craft firsthand, bringing the same
+                                    hands-on obsession to tequila that he has always brought to music.</p>
+                                <p>This is not a celebrity collaboration. This is a legacy.</p>
+                                <div class="founder__milestones">
+          <div class="milestone">
+            <span class="milestone__year">2011</span>
+            <span class="milestone__text">International Villager — Cultural Breakthrough</span>
+          </div>
+          <div class="milestone">
+            <span class="milestone__year">2012</span>
+            <span class="milestone__text">Bollywood's Highest-Paid Music Artist</span>
+          </div>
+          <div class="milestone">
+            <span class="milestone__year">2024</span>
+            <span class="milestone__text">"Millionaire" — Triumphant Global Comeback</span>
+          </div>
+          <div class="milestone">
+            <span class="milestone__year">2026</span>
+            <span class="milestone__text">Casa Tupka — The Next Masterpiece</span>
+          </div>
+        </div>
+
+      
+                            </div>
+                            <div class="ct-founder-right">
+                                <div class="ct-founder-img-container">
+                                    <img src="img/Banner with Honey Singh CASA Tupka 1.png"
+                                        alt="Honey Singh - Casa Tupka" class="ct-founder-img">
+                                    <div class="ct-founder-img-overlay"></div>
+                                </div>
+                                <blockquote class="ct-founder-quote">
+                                    &ldquo;I&rsquo;ve spent my whole life making things that make people feel something.
+                                    Casa Tupka is no different &mdash; except this time, you don&rsquo;t just hear it.
+                                    You taste it.&rdquo;
+                                    <cite>&mdash; Yo Yo Honey Singh, Founder, Casa Tupka</cite>
+                                </blockquote>
+                            </div>
+
+                        </div>
+                    </section>
+<div class="parallax-strip" style="background-image: url('img/barrel-room_3.jpeg');">
+  <div class="parallax-strip__overlay"></div>
+  <div class="parallax-strip__content reveal-up">
+    <p class="parallax-strip__label">The Agave Highlands, Jalisco, Mexico</p>
+    <h3 class="parallax-strip__quote">"Working in Agave fields to make my<br />handcrafted CASA TUPKA tequila in Mexico."</h3>
+    <p class="parallax-strip__attr">— Yo Yo Honey Singh, Founder, February 2026</p>
+  </div>
+</div>
+                    <div class="ct-gold-separator"></div>
+<!-- ABOUT CASA TUPKA -->
+                    <section class="ct-about-section" id="our_story">
+                        <div class="ct-about-bg-glow"></div>
+                        <div class="ct-about-container">
+                            <div class="ct-about-label">OUR STORY</div>
+                            <h2 class="ct-about-heading">Born from <span>Passion.</span><br>Poured with
+                                <span>Purpose.</span></h2>
+                            <div class="ct-about-grid">
+                                <div class="ct-about-text">
+                                    <p>CASA TUPKA is a handcrafted premium tequila, born from Honey Singh&rsquo;s deep
+                                        and personal journey into the agave-rich heartland of Mexico. The founder
+                                        himself walked the fields, worked alongside the farmers, and immersed himself in
+                                        every stage of production &mdash; because Casa Tupka is not a celebrity stamp on
+                                        a label. It is a labour of love, precision, and uncompromising taste.</p>
+                                    <p>Crafted in Mexico &mdash; the only country on earth where true tequila can
+                                        legally exist &mdash; Casa Tupka honours centuries of tradition while elevating
+                                        the experience to luxury&rsquo;s highest shelf.</p>
+                                    <p>The world has heard Honey Singh. Soon, the world will taste him. Casa Tupka.
+                                        Arriving Summer 2026.</p>
+                                    <div class="ct-about-divider"></div>
+                                    <div class="ct-about-tags">
+                                        <span>100% Blue Agave</span>
+                                        <span>Crafted in Mexico</span>
+                                        <span>Yo Yo Honey Singh, Founder</span>
+                                        <span>Summer 2026</span>
+                                    </div>
+                                </div>
+                                <div class="ct-about-visual">
+                                    <div class="ct-about-img-frame">
+                                        <img src="img/Casa Tupka LOGO.png" alt="Casa Tupka" class="ct-about-logo-large">
+                                        <div class="ct-about-frame-glow"></div>
+                                    </div>
+                                    <blockquote class="ct-quote">
+                                        &ldquo;I wanted to create something that represents my journey &mdash; bold,
+                                        refined, and impossible to ignore.&rdquo;
+                                        <cite>&mdash; Yo Yo Honey Singh, Founder</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- STATS SECTION -->
+                    <section class="ct-stats-section">
+                        <div class="ct-stats-bg-line"></div>
+                        <div class="ct-stats-container">
+                            <div class="ct-about-label">BY THE NUMBERS</div>
+                            <h2 class="ct-section-heading">The Numbers That<br><span>Tell the Story</span></h2>
+                            <div class="ct-stats-grid">
+                                <div class="ct-stat-item">
+                                    <h3 class="ct-stat-num" data-target="12">0</h3>
+                                    <span class="ct-stat-unit">+ Years</span>
+                                    <p>Time Blue Agave takes to mature before a single drop can be distilled</p>
+                                </div>
+                                <div class="ct-stat-item">
+                                    <h3 class="ct-stat-num" data-target="200">0</h3>
+                                    <span class="ct-stat-unit">+ Agave Species</span>
+                                    <p>Only Blue Weber Agave &mdash; just one of 200+ species &mdash; can legally become
+                                        tequila</p>
+                                </div>
+                                <div class="ct-stat-item">
+                                    <h3 class="ct-stat-num" data-target="1974">0</h3>
+                                    <span class="ct-stat-unit"> Year</span>
+                                    <p>When tequila earned global Appellation of Origin protection &mdash; the first
+                                        Mexican spirit to do so</p>
+                                </div>
+                                <div class="ct-stat-item">
+                                    <h3 class="ct-stat-num" data-target="12">0</h3>
+                                    <span class="ct-stat-unit">B+ Market</span>
+                                    <p>Billion dollar global tequila market &mdash; the world&rsquo;s fastest-growing
+                                        premium spirits category</p>
+                                </div>
+                                <div class="ct-stat-item">
+                                    <h3 class="ct-stat-num" data-target="2">0</h3>
+                                    <span class="ct-stat-unit">x Distilled</span>
+                                    <p>Every Casa Tupka batch distilled twice minimum for exceptional purity and
+                                        character</p>
+                                </div>
+                                <div class="ct-stat-item">
+                                    <h3 class="ct-stat-num" data-target="5">0</h3>
+                                    <span class="ct-stat-unit"> States</span>
+                                    <p>The only 5 Mexican states legally authorised to produce authentic tequila. Casa
+                                        Tupka is born here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="neo-luxury-section" id="blanco">
+
+                        <!-- Animated Background -->
+                        <div class="bg-light light1"></div>
+                        <div class="bg-light light2"></div>
+
+                        <div class="neo-container">
+
+                            <!-- LEFT SIDE -->
+                            <div class="neo-content">
+
+                                <span class="neo-subtitle">
+                                    CASA TUPKA • Blanco
+                                </span>
+
+                                <h1>
+                                    UNMASKED.<br>
+                                    UNAGED.<br>
+                                        UNDENIABLE
+                                </h1>
+
+                                <p>
+                                    Blanco tequila — also known as Plata or Silver — is the unaged soul of the spirit.
+                                    Bottled immediately after the second distillation, it undergoes zero time in oak
+                                    barrels. What you pour is precisely what the agave gives you: raw, honest, and
+                                    brilliantly clear.
+
+                                    In the world of tequila, Blanco is not a starting point — it is a standard. It
+                                    demands the very best agave, the most skilled distillation, and zero room to hide
+                                    imperfection.
+                                </p>
+
+                                
+ <div class="expression__quote">
+          <p><em>"Transparency has always been my standard. In music, I never hid behind the noise. Casa Tupka Blanco is the same — nothing hidden, nothing diluted. Pure agave. Pure intention."</em></p>
+          <span>— Yo Yo Honey Singh</span>
+        </div>
+        <div class="expression__cta">
+          <span class="coming-soon-pill">Coming Summer 2026</span>
+          <a href="#notify" class="btn btn--gold">Notify Me</a>
+        </div>
+                                <!-- FEATURE BOXES -->
+                                
+
+                            </div>
+
+                            <!-- RIGHT SIDE -->
+                            <div class="neo-image-area">
+
+                                <!-- Main Glow -->
+                                <div class="main-glow"></div>
+
+                                <!-- Rotating Ring -->
+                                <div class="rotating-ring"></div>
+
+                                <!-- Main Product Image -->
+                                <img src="img/blanko.png" class="main-product">
+
+                                <!-- Floating Elements -->
+                                 <div class="phone-hide-img">
+                                <img src="img/CASA Tupka  Mixtre 2 (Without BG).png" class="float-item item1">
+                                <img src="img/CASA Tupka  Mixtre 1 (Without BG).png" class="float-item item2">
+                                <img src="img/CASA Tupka  Mixtre 2 (Without BG).png" class="float-item item3">
+</div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="lux-touch-wrap" id="the_craft">
+
+                        <div class="lux-touch-container">
+
+                            <!-- LEFT TEXT -->
+                            <div class="lux-touch-left">
+                                <h2>Each Drop, A World of Its Own.</h2>
+                                <p>
+                                    The full Casa Tupka collection is being perfected. Every bottle in this range
+                                    carries a story and they're almost ready to be told.
+                                </p>
+                            </div>
+
+                            <!-- RIGHT SLIDER -->
+                            <div class="lux-touch-slider">
+
+                                <div class="lux-slider-track">
+
+                                    <!-- CARD -->
+                                    <div class="lux-card">
+                                        <img src="img/Casa Tupak Bottle (Blanco) Image-2.png">
+                                        <div class="lux-overlay">
+                                            <h4>Blanco</h4>
+                                            <span>Coming soon</span>
+                                        </div>
+                                    </div>
+ <div class="lux-card">
+                                        <img src="img/Casa Tupak Bottle (Reposado) Image-2.png">
+                                        <div class="lux-overlay">
+                                            <h4>Reposado</h4>
+                                            <span>Coming soon</span>
+                                        </div>
+                                    </div>
+                                    <div class="lux-card">
+                                        <img src="img/Casa_Tupka_Mixer_1 (1).png">
+                                        <div class="lux-overlay">
+                                            <h4>Premium Mixer</h4>
+                                            <span>Coming soon</span>
+                                        </div>
+                                    </div>
+                                   
+
+
+
+
+                                </div>
+
+                                <!-- ARROWS -->
+                                <button class="lux-arrow left" onclick="luxSlide(-1)">&#10094;</button>
+                                <button class="lux-arrow right" onclick="luxSlide(1)">&#10095;</button>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="ct-hero-section" id="Reposado">
+
+                        <!-- BACKGROUND VIDEO / IMAGE -->
+
+                        <div class="ct-bg-layer"></div>
+
+                        <!-- GLOW EFFECTS -->
+
+                        <div class="ct-glow glow-one"></div>
+                        <div class="ct-glow glow-two"></div>
+
+                        <div class="ct-container">
+
+                            <!-- LEFT CONTENT -->
+
+                            <div class="ct-content">
+
+                                <span class="ct-subtitle">
+                                    CASA TUPKA • Reposado
+                                </span>
+
+                               
+ <h1>
+                                    SOME THINGS ONLY
+
+                                    GET BETTER
+WITH TIME
+                                </h1>
+
+                                <p>
+                                    Reposado is the Spanish word for "rested" — and no name in tequila is more perfectly chosen. After the intensity of distillation, Reposado tequila is laid to rest inside oak barrels for a minimum of two months and up to one full year.
+
+This is the middle world of tequila — where the wild brilliance of the Blue Agave meets the gentle civilisation of the barrel. The result: extraordinary balance, warmth, complexity, and an unmistakable golden hue.
+                                </p>
+
+                                <div class="expression__quote">
+          <p><em>"The greatest tracks I ever made weren't rushed. They were built, layered, and left to breathe until every element was exactly right. Casa Tupka Reposado is that patience in a bottle."</em></p>
+          <span>— Yo Yo Honey Singh</span>
+        </div>
+        <div class="expression__cta">
+          <span class="coming-soon-pill coming-soon-pill--gold">Coming Summer 2026</span>
+          <a href="#notify" class="btn btn--gold">Notify Me</a>
+        </div>
+
+                                <!-- FLOATING STATS -->
+
+                               
+
+                            </div>
+
+                            <!-- RIGHT SIDE -->
+
+                            <div class="ct-image-area">
+
+                                <!-- BIG CIRCLE -->
+
+                                <div class="ct-circle"></div>
+
+                                <!-- MAIN PRODUCT -->
+
+                                <img src="img/CASA_Tupka__Reposado_4.png" alt="" class="main-bottle">
+
+                                <!-- FLOATING IMAGE 1 -->
+<div class="phone-hide-img">
+                                <div class="floating-img img-one">
+                                    <img src="img/CASA Tupka  Mixtre 2 (Without BG).png" alt="">
+                                </div>
+
+                                <!-- FLOATING IMAGE 2 -->
+
+                                <div class="floating-img img-two">
+                                    <img src="img/CASA Tupka  Mixtre 1 (Without BG).png" alt="">
+                                </div>
+
+                                <!-- FLOATING IMAGE 3 -->
+
+                                <div class="floating-img img-three">
+                                    <img src="img/CASA Tupka  Mixtre 2 (Without BG).png" alt="">
+                                </div>
+
+                                <!-- FLOATING IMAGE 4 -->
+
+                                <div class="floating-img img-four">
+                                    <img src="img/CASA Tupka  Mixtre 1 (Without BG).png" alt="">
+                                </div>
+</div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+                <div class="sticky-button-region js-sticky-region"></div>
+            </div>
+
+        </main>
+        <!-- ========== EMAIL CAPTURE ========== -->
+<section class="notify section" id="notify">
+  <div class="notify__bg"></div>
+  <div class="container">
+    <div class="notify__inner reveal-up">
+      <img src="img/Casa Tupka LOGO.png" alt="Casa Tupka" class="notify__logo" />
+      <div class="section__label" style="text-align:center; color: var(--gold-light)">Join The Waitlist</div>
+      <h2 class="notify__heading">THE BEST IS<br /><em>ALMOST HERE.</em></h2>
+      <p class="notify__sub">Be among the first to experience Casa Tupka when it arrives this summer. Enter your email below and we'll pour the details straight to your inbox.</p>
+
+      <form class="notify__form" id="notify-form">
+        <div class="notify__form-group">
+          <input type="email" id="email-input" class="notify__input" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn--gold btn--large notify__btn">Secure My Spot</button>
+        </div>
+        <p class="notify__disclaimer">No spam. Only the good stuff. Unsubscribe anytime.</p>
+      </form>
+      <div class="notify__success" id="notify-success" style="display:none">
+        <div class="success-icon">✦</div>
+        <h3>You're on the list.</h3>
+        <p>We'll be in touch when Casa Tupka arrives. The wait will be worth it.</p>
+      </div>
+
+      <div class="notify__socials">
+        <span>Follow the journey</span>
+        <a href="https://www.instagram.com/yoyohoneysingh" target="_blank" class="social-link" aria-label="Instagram">
+          <img src="img/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/share/1EjRkbRLmG/?mibextid=wwXIfr" class="social-link" aria-label="Facebook">
+          <img src="img/facebook-gold-no-bg.png" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="img/Casa Tupka LOGO.png" alt="Casa Tupka" class="footer__logo" />
+          <p class="footer__tagline">Handcrafted in Mexico.<br />Born for the world.</p>
+          <p class="footer__origin">🌵 Jalisco, Mexico — 2026</p>
+        </div>
+        <div class="footer__col">
+          <h5>Discover</h5>
+          <ul>
+            <li><a href="#our_story">Our Story</a></li>
+            <li><a href="#Expressions">Expressions</a></li>
+            <li><a href="#blanco">Blanco</a></li>
+            <li><a href="#Reposado">Reposado</a></li>
+            <li><a href="#founder">Yo Yo Honey Singh</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/yoyohoneysingh" target="_blank">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#notify">Waitlist</a></li>
+            <li><a href="mailto:hello@casatupka.com">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Press</h5>
+          <ul>
+            <li>Hindustan Times</li>
+            <li>Indulge Express</li>
+            <li>Radio Mirchi</li>
+            <li>NDTV Entertainment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <p class="footer__legal">Drink Responsibly. Must be of legal drinking age to consume alcohol. © 2026 Casa Tupka. All Rights Reserved | Designed by <a href="https://kraftingdigital.com/">Krafting Digital.</a></p>
+      <div class="footer__links">
+        <!-- <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+        <!-- Coming Soon Modal -->
+        <div id="comingSoonModal" class="cs-modal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="cs-modal__box" role="document">
+                <button class="cs-close" aria-label="Close">×</button>
+                <img src="img/Casa Tupka LOGO.png" alt="Casa Tupka" class="cs-modal__logo">
+                <div class="cs-modal__title">Coming Soon</div>
+                <div class="cs-modal__subtitle">We're putting the finishing touches on something extraordinary. Stay tuned.</div>
+            </div>
+        </div>
+
+
+
+    <script>
+
+        const track = document.querySelector('.lux-slider-track');
+
+        const cards = Array.from(document.querySelectorAll('.lux-card'));
+
+        /* CLONE FIRST CARDS */
+
+        cards.forEach(card => {
+            const clone = card.cloneNode(true);
+            track.appendChild(clone);
+        });
+
+        let position = 0;
+
+        function luxSlide(direction) {
+
+            const allCards = document.querySelectorAll('.lux-card');
+
+            const cardWidth = allCards[0].offsetWidth + 20;
+
+            position += direction;
+
+            track.style.transition = "0.5s ease";
+
+            track.style.transform = `translateX(-${position * cardWidth}px)`;
+
+            /* SMOOTH INFINITE LOOP */
+
+            if (position >= cards.length) {
+
+                setTimeout(() => {
+
+                    track.style.transition = "none";
+
+                    position = 0;
+
+                    track.style.transform = `translateX(0px)`;
+
+                }, 500);
+
+            }
+
+            if (position < 0) {
+
+                track.style.transition = "none";
+
+                position = cards.length - 1;
+
+                track.style.transform = `translateX(-${position * cardWidth}px)`;
+
+            }
+
+        }
+
+    </script>
+
+    <script>
+
+        const slides = document.querySelectorAll(".slide");
+
+        let currentSlide = 0;
+
+        function showSlide() {
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            slides[currentSlide].classList.add("active");
+
+            currentSlide++;
+
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+
+        }
+
+        setInterval(showSlide, 4000);
+
+    </script>
+
+    <script>
+
+        const fixedVideo = document.getElementById("fixedVideo");
+
+        window.addEventListener("scroll", () => {
+
+            const scroll = window.scrollY;
+
+            /* animate to center column */
+
+            if (scroll > 150) {
+
+                fixedVideo.classList.add("animate");
+
+            } else {
+
+                fixedVideo.classList.remove("animate");
+
+            }
+
+            /* hide after animation section */
+
+            if (scroll > 950) {
+
+                fixedVideo.classList.add("hide-video");
+
+            } else {
+
+                fixedVideo.classList.remove("hide-video");
+
+            }
+
+        });
+
+    </script>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const fixedVideo = document.querySelector(".fixed-video-box");
+
+            window.addEventListener("scroll", function () {
+
+                let scrollTop = window.scrollY;
+
+                if (scrollTop > 120) {
+
+                    fixedVideo.classList.add("active");
+
+                } else {
+
+                    fixedVideo.classList.remove("active");
+
+                }
+
+            });
+
+        });
+
+    </script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const videoText = document.getElementById("videoContents");
+
+            const afterText = document.getElementById("afterBannerText");
+
+            const fixedVideos = document.getElementById("fixedVideos");
+
+            const nextSection = document.querySelector(".mobile-banner-section");
+
+            window.addEventListener("scroll", function () {
+
+                if (window.innerWidth <= 768) {
+
+                    const scrollTop = window.scrollY;
+
+                    const videoHeight = fixedVideos.offsetHeight;
+
+                    const nextTop = nextSection.offsetTop;
+
+                    /* =====================================
+                    SMOOTH SCROLL TEXT DOWN
+                    ===================================== */
+
+                    let moveY = 50 + (scrollTop * 0.2);
+
+                    videoText.style.top = moveY + "%";
+
+                    /* =====================================
+                    HIDE FIRST TEXT
+                    ===================================== */
+
+                    if (scrollTop > videoHeight - 180) {
+
+                        videoText.classList.add("hide");
+
+                        afterText.classList.add("show");
+
+                    }
+
+                    else {
+
+                        videoText.classList.remove("hide");
+
+                        afterText.classList.remove("show");
+
+                    }
+
+                    /* =====================================
+                    HIDE SECOND TEXT WHEN IT TOUCHES NEXT SECTION
+                    ===================================== */
+
+                    // ensure we have elements (defensive)
+                    if (afterText && nextSection) {
+                        const afterRect = afterText.getBoundingClientRect();
+                        const nextRect = nextSection.getBoundingClientRect();
+
+                        // when the bottom of afterText reaches the top of the next section,
+                        // remove the visible class so it hides immediately on touch.
+                        if (afterRect.bottom >= nextRect.top) {
+                            afterText.classList.remove('show');
+                        }
+                    }
+
+                }
+
+            });
+
+        });
+
+    </script>
+    <script>
+
+        window.addEventListener("scroll", function () {
+
+            const mobileSection = document.querySelector(".mobile-banner-section");
+
+            if (window.scrollY > 200) {
+                mobileSection.classList.add("active-scroll");
+            } else {
+                mobileSection.classList.remove("active-scroll");
+            }
+
+        });
+
+    </script>
+    <script>
+        // COUNTER ANIMATION — CASA TUPKA STATS
+        const counters = document.querySelectorAll('.ct-stat-num');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.dataset.target);
+                    let count = 0;
+                    const step = Math.ceil(target / 60);
+                    const timer = setInterval(() => {
+                        count += step;
+                        if (count >= target) { count = target; clearInterval(timer); el.classList.add('counted'); }
+                        el.textContent = count;
+                    }, 30);
+                    observer.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(c => observer.observe(c));
+    </script>
+    <script>
+
+        const openMenu = document.getElementById("openMenu");
+        const closeMenu = document.getElementById("closeMenu");
+        const menuOverlay = document.getElementById("menuOverlay");
+
+        openMenu.addEventListener("click", () => {
+            menuOverlay.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            menuOverlay.classList.remove("active");
+        });
+
+        /* Close when click outside */
+
+        menuOverlay.addEventListener("click", (e) => {
+
+            if (e.target === menuOverlay) {
+                menuOverlay.classList.remove("active");
+            }
+
+        });
+
+    </script>
+
+    <script src="js/casatupka.js"></script>
+</body>
+
+</html>
